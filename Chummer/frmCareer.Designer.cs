@@ -4551,6 +4551,69 @@ namespace Chummer
             this.tabCharacterTabs.Tag = "";
             this.tabCharacterTabs.SelectedIndexChanged += new System.EventHandler(this.tabCharacterTabs_SelectedIndexChanged);
             // 
+            // tabStory
+            //
+            this.tabStory.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tabStory.Controls.Add(this.tabStoryTabs);
+            this.tabStory.Location = new System.Drawing.Point(4, 22);
+            this.tabStory.Name = "tabStory";
+            this.tabStory.Size = new System.Drawing.Size(861, 669);
+            this.tabStory.TabIndex = 21;
+            this.tabStory.Tag = "Tab_Story";
+            this.tabStory.Text = "Story & Stats";
+            // 
+            // tabMagRes
+            //
+            this.tabMagRes.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tabMagRes.Controls.Add(this.tabMagResTabs);
+            this.tabMagRes.Location = new System.Drawing.Point(4, 22);
+            this.tabMagRes.Name = "tabMagRes";
+            this.tabMagRes.Size = new System.Drawing.Size(861, 669);
+            this.tabMagRes.TabIndex = 22;
+            this.tabMagRes.Tag = "Tab_MagRes";
+            this.tabMagRes.Text = "Magic & Resonance";
+            // 
+            // tabStoryTabs
+            //
+            this.tabStoryTabs.Controls.Add(this.tabCharacterInfo);
+            this.tabStoryTabs.Controls.Add(this.tabCommon);
+            this.tabStoryTabs.Controls.Add(this.tabSkills);
+            this.tabStoryTabs.Controls.Add(this.tabLimits);
+            this.tabStoryTabs.Controls.Add(this.tabMartialArts);
+
+            this.tabStoryTabs.Controls.Add(this.tabContacts);
+            this.tabStoryTabs.Controls.Add(this.tabEnemies);
+            this.tabStoryTabs.Controls.Add(this.tabPets);
+            this.tabStoryTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabStoryTabs.Location = new System.Drawing.Point(3, 3);
+            this.tabStoryTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabStoryTabs.Name = "tabStoryTabs";
+            this.tabStoryTabs.SelectedIndex = 0;
+            this.tabStoryTabs.Size = new System.Drawing.Size(200, 100);
+            this.tabStoryTabs.TabIndex = 0;
+            this.tabStoryTabs.SelectedIndexChanged += new System.EventHandler(this.tabStoryTabs_SelectedIndexChanged);
+            // 
+            // tabMagResTabs
+            //
+            this.tabMagResTabs.Controls.Add(this.tabMagician);
+            this.tabMagResTabs.Controls.Add(this.tabAdept);
+            this.tabMagResTabs.Controls.Add(this.tabTechnomancer);
+            this.tabMagResTabs.Controls.Add(this.tabAdvancedPrograms);
+            this.tabMagResTabs.Controls.Add(this.tabCritter);
+            this.tabMagResTabs.Controls.Add(this.tabInitiation);
+            this.tabMagResTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabMagResTabs.Location = new System.Drawing.Point(3, 3);
+            this.tabMagResTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabMagResTabs.Name = "tabMagResTabs";
+            this.tabMagResTabs.SelectedIndex = 0;
+            this.tabMagResTabs.Size = new System.Drawing.Size(200, 100);
+            this.tabMagResTabs.TabIndex = 0;
+            this.tabMagResTabs.SelectedIndexChanged += new System.EventHandler(this.tabMagResTabs_SelectedIndexChanged);
+            // 
             // tabCommon
             // 
             this.tabCommon.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -14033,67 +14096,6 @@ namespace Chummer
             this.tsWeaponMountLocation.Size = new System.Drawing.Size(180, 22);
             this.tsWeaponMountLocation.Tag = "Menu_RenameLocation";
             this.tsWeaponMountLocation.Text = "Rename &Location";
-            // 
-            // tabStory
-            //
-            this.tabStory.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.tabStory.Controls.Add(this.tabStoryTabs);
-            this.tabStory.Location = new System.Drawing.Point(4, 22);
-            this.tabStory.Name = "tabStory";
-            this.tabStory.Size = new System.Drawing.Size(861, 669);
-            this.tabStory.TabIndex = 21;
-            this.tabStory.Tag = "Tab_Story";
-            this.tabStory.Text = "Story & Stats";
-            // 
-            // tabMagRes
-            //
-            this.tabMagRes.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.tabMagRes.Controls.Add(this.tabMagResTabs);
-            this.tabMagRes.Location = new System.Drawing.Point(4, 22);
-            this.tabMagRes.Name = "tabMagRes";
-            this.tabMagRes.Size = new System.Drawing.Size(861, 669);
-            this.tabMagRes.TabIndex = 22;
-            this.tabMagRes.Tag = "Tab_MagRes";
-            this.tabMagRes.Text = "Magic & Resonance";
-            // 
-            // tabStoryTabs
-            //
-            this.tabStoryTabs.Controls.Add(this.tabCharacterInfo);
-            this.tabStoryTabs.Controls.Add(this.tabCommon);
-            this.tabStoryTabs.Controls.Add(this.tabSkills);
-            this.tabStoryTabs.Controls.Add(this.tabLimits);
-            this.tabStoryTabs.Controls.Add(this.tabMartialArts);
-  
-            this.tabStoryTabs.Controls.Add(this.tabContacts);
-            this.tabStoryTabs.Controls.Add(this.tabEnemies);
-            this.tabStoryTabs.Controls.Add(this.tabPets);
-            this.tabStoryTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabStoryTabs.Location = new System.Drawing.Point(3,3);
-            this.tabStoryTabs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabStoryTabs.Name = "tabStoryTabs";
-            this.tabStoryTabs.SelectedIndex = 0;
-            this.tabStoryTabs.Size = new System.Drawing.Size(200, 100);
-            this.tabStoryTabs.TabIndex = 0;
-            // 
-            // tabMagResTabs
-            //
-            this.tabMagResTabs.Controls.Add(this.tabMagician);
-            this.tabMagResTabs.Controls.Add(this.tabAdept);
-            this.tabMagResTabs.Controls.Add(this.tabTechnomancer);
-            this.tabMagResTabs.Controls.Add(this.tabAdvancedPrograms);
-            this.tabMagResTabs.Controls.Add(this.tabCritter);
-            this.tabMagResTabs.Controls.Add(this.tabInitiation);
-            this.tabMagResTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabMagResTabs.Location = new System.Drawing.Point(3, 3);
-            this.tabMagResTabs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabMagResTabs.Name = "tabMagResTabs";
-            this.tabMagResTabs.SelectedIndex = 0;
-            this.tabMagResTabs.Size = new System.Drawing.Size(200, 100);
-            this.tabMagResTabs.TabIndex = 0;
             // 
             // frmCareer
             // 

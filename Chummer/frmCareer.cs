@@ -15402,9 +15402,19 @@ namespace Chummer
         {
             RefreshPasteStatus();
         }
-#endregion
 
-#region Condition Monitors
+        private void tabStoryTabs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RefreshPasteStatus();
+        }
+        private void tabMagResTabs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RefreshPasteStatus();
+        }
+
+        #endregion
+
+        #region Condition Monitors
         private void chkPhysicalCM_CheckedChanged(object sender, EventArgs e)
         {
             if (sender is CheckBox objBox)
