@@ -1117,8 +1117,6 @@ namespace Chummer
             this.lblImprovementTypeLabel = new System.Windows.Forms.Label();
             this.treImprovements = new System.Windows.Forms.TreeView();
             this.cmdAddImprovement = new System.Windows.Forms.Button();
-            this.tabRelationships = new System.Windows.Forms.TabPage();
-            this.tabPeople = new System.Windows.Forms.TabControl();
             this.tabContacts = new System.Windows.Forms.TabPage();
             this.cmdSwapContactOrder = new System.Windows.Forms.Button();
             this.cmdContactsExpansionToggle = new System.Windows.Forms.Button();
@@ -1191,6 +1189,10 @@ namespace Chummer
             this.tsVehicleWeaponMountAddUnderbarrel = new System.Windows.Forms.ToolStripMenuItem();
             this.tsVehicleWeaponMountNotes = new System.Windows.Forms.ToolStripMenuItem();
             this.tsWeaponMountLocation = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabStory = new System.Windows.Forms.TabPage();
+            this.tabMagRes = new System.Windows.Forms.TabPage();
+            this.tabStoryTabs = new System.Windows.Forms.TabControl();
+            this.tabMagResTabs = new System.Windows.Forms.TabControl();
             this.StatusStrip.SuspendLayout();
             this.cmsMartialArts.SuspendLayout();
             this.cmsSpellButton.SuspendLayout();
@@ -1282,8 +1284,6 @@ namespace Chummer
             this.tabCalendar.SuspendLayout();
             this.tabNotes.SuspendLayout();
             this.tabImprovements.SuspendLayout();
-            this.tabRelationships.SuspendLayout();
-            this.tabPeople.SuspendLayout();
             this.tabContacts.SuspendLayout();
             this.cmsAddContact.SuspendLayout();
             this.tabEnemies.SuspendLayout();
@@ -1307,6 +1307,8 @@ namespace Chummer
             this.cmsTechnique.SuspendLayout();
             this.cmsAdvancedProgram.SuspendLayout();
             this.cmsWeaponMount.SuspendLayout();
+            this.tabStory.SuspendLayout();
+            this.tabMagRes.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTraditionSource
@@ -4533,25 +4535,13 @@ namespace Chummer
             // 
             // tabCharacterTabs
             // 
-            this.tabCharacterTabs.Controls.Add(this.tabCommon);
-            this.tabCharacterTabs.Controls.Add(this.tabSkills);
-            this.tabCharacterTabs.Controls.Add(this.tabLimits);
-            this.tabCharacterTabs.Controls.Add(this.tabMartialArts);
-            this.tabCharacterTabs.Controls.Add(this.tabMagician);
-            this.tabCharacterTabs.Controls.Add(this.tabAdept);
-            this.tabCharacterTabs.Controls.Add(this.tabTechnomancer);
-            this.tabCharacterTabs.Controls.Add(this.tabAdvancedPrograms);
-            this.tabCharacterTabs.Controls.Add(this.tabCritter);
-            this.tabCharacterTabs.Controls.Add(this.tabInitiation);
-            this.tabCharacterTabs.Controls.Add(this.tabCyberware);
+            this.tabCharacterTabs.Controls.Add(this.tabStory);
+            this.tabCharacterTabs.Controls.Add(this.tabMagRes);
             this.tabCharacterTabs.Controls.Add(this.tabStreetGear);
-            this.tabCharacterTabs.Controls.Add(this.tabVehicles);
-            this.tabCharacterTabs.Controls.Add(this.tabCharacterInfo);
             this.tabCharacterTabs.Controls.Add(this.tabKarma);
             this.tabCharacterTabs.Controls.Add(this.tabCalendar);
             this.tabCharacterTabs.Controls.Add(this.tabNotes);
             this.tabCharacterTabs.Controls.Add(this.tabImprovements);
-            this.tabCharacterTabs.Controls.Add(this.tabRelationships);
             this.tabCharacterTabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabCharacterTabs.Location = new System.Drawing.Point(0, 0);
             this.tabCharacterTabs.Name = "tabCharacterTabs";
@@ -7637,6 +7627,8 @@ namespace Chummer
             this.tabStreetGearTabs.Controls.Add(this.tabGear);
             this.tabStreetGearTabs.Controls.Add(this.tabArmor);
             this.tabStreetGearTabs.Controls.Add(this.tabWeapons);
+            this.tabStreetGearTabs.Controls.Add(this.tabVehicles);
+            this.tabStreetGearTabs.Controls.Add(this.tabCyberware);
             this.tabStreetGearTabs.Controls.Add(this.tabLifestyle);
             this.tabStreetGearTabs.Location = new System.Drawing.Point(3, 3);
             this.tabStreetGearTabs.Name = "tabStreetGearTabs";
@@ -13381,30 +13373,6 @@ namespace Chummer
             this.cmdAddImprovement.UseVisualStyleBackColor = true;
             this.cmdAddImprovement.Click += new System.EventHandler(this.cmdAddImprovement_Click);
             // 
-            // tabRelationships
-            // 
-            this.tabRelationships.Controls.Add(this.tabPeople);
-            this.tabRelationships.Location = new System.Drawing.Point(4, 22);
-            this.tabRelationships.Name = "tabRelationships";
-            this.tabRelationships.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRelationships.Size = new System.Drawing.Size(861, 669);
-            this.tabRelationships.TabIndex = 20;
-            this.tabRelationships.Tag = "String_Relationships";
-            this.tabRelationships.Text = "Relationships";
-            this.tabRelationships.UseVisualStyleBackColor = true;
-            // 
-            // tabPeople
-            // 
-            this.tabPeople.Controls.Add(this.tabContacts);
-            this.tabPeople.Controls.Add(this.tabEnemies);
-            this.tabPeople.Controls.Add(this.tabPets);
-            this.tabPeople.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabPeople.Location = new System.Drawing.Point(3, 3);
-            this.tabPeople.Name = "tabPeople";
-            this.tabPeople.SelectedIndex = 0;
-            this.tabPeople.Size = new System.Drawing.Size(855, 663);
-            this.tabPeople.TabIndex = 94;
-            // 
             // tabContacts
             // 
             this.tabContacts.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -14066,6 +14034,67 @@ namespace Chummer
             this.tsWeaponMountLocation.Tag = "Menu_RenameLocation";
             this.tsWeaponMountLocation.Text = "Rename &Location";
             // 
+            // tabStory
+            //
+            this.tabStory.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tabStory.Controls.Add(this.tabStoryTabs);
+            this.tabStory.Location = new System.Drawing.Point(4, 22);
+            this.tabStory.Name = "tabStory";
+            this.tabStory.Size = new System.Drawing.Size(861, 669);
+            this.tabStory.TabIndex = 21;
+            this.tabStory.Tag = "Tab_Story";
+            this.tabStory.Text = "Story & Stats";
+            // 
+            // tabMagRes
+            //
+            this.tabMagRes.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tabMagRes.Controls.Add(this.tabMagResTabs);
+            this.tabMagRes.Location = new System.Drawing.Point(4, 22);
+            this.tabMagRes.Name = "tabMagRes";
+            this.tabMagRes.Size = new System.Drawing.Size(861, 669);
+            this.tabMagRes.TabIndex = 22;
+            this.tabMagRes.Tag = "Tab_MagRes";
+            this.tabMagRes.Text = "Magic & Resonance";
+            // 
+            // tabStoryTabs
+            //
+            this.tabStoryTabs.Controls.Add(this.tabCharacterInfo);
+            this.tabStoryTabs.Controls.Add(this.tabCommon);
+            this.tabStoryTabs.Controls.Add(this.tabSkills);
+            this.tabStoryTabs.Controls.Add(this.tabLimits);
+            this.tabStoryTabs.Controls.Add(this.tabMartialArts);
+  
+            this.tabStoryTabs.Controls.Add(this.tabContacts);
+            this.tabStoryTabs.Controls.Add(this.tabEnemies);
+            this.tabStoryTabs.Controls.Add(this.tabPets);
+            this.tabStoryTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabStoryTabs.Location = new System.Drawing.Point(3,3);
+            this.tabStoryTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabStoryTabs.Name = "tabStoryTabs";
+            this.tabStoryTabs.SelectedIndex = 0;
+            this.tabStoryTabs.Size = new System.Drawing.Size(200, 100);
+            this.tabStoryTabs.TabIndex = 0;
+            // 
+            // tabMagResTabs
+            //
+            this.tabMagResTabs.Controls.Add(this.tabMagician);
+            this.tabMagResTabs.Controls.Add(this.tabAdept);
+            this.tabMagResTabs.Controls.Add(this.tabTechnomancer);
+            this.tabMagResTabs.Controls.Add(this.tabAdvancedPrograms);
+            this.tabMagResTabs.Controls.Add(this.tabCritter);
+            this.tabMagResTabs.Controls.Add(this.tabInitiation);
+            this.tabMagResTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabMagResTabs.Location = new System.Drawing.Point(3, 3);
+            this.tabMagResTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabMagResTabs.Name = "tabMagResTabs";
+            this.tabMagResTabs.SelectedIndex = 0;
+            this.tabMagResTabs.Size = new System.Drawing.Size(200, 100);
+            this.tabMagResTabs.TabIndex = 0;
+            // 
             // frmCareer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -14204,8 +14233,7 @@ namespace Chummer
             this.tabNotes.PerformLayout();
             this.tabImprovements.ResumeLayout(false);
             this.tabImprovements.PerformLayout();
-            this.tabRelationships.ResumeLayout(false);
-            this.tabPeople.ResumeLayout(false);
+          
             this.tabContacts.ResumeLayout(false);
             this.tabContacts.PerformLayout();
             this.cmsAddContact.ResumeLayout(false);
@@ -14232,6 +14260,8 @@ namespace Chummer
             this.cmsTechnique.ResumeLayout(false);
             this.cmsAdvancedProgram.ResumeLayout(false);
             this.cmsWeaponMount.ResumeLayout(false);
+            this.tabStory.ResumeLayout(false);
+            this.tabMagRes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -14567,7 +14597,6 @@ namespace Chummer
         private System.Windows.Forms.ToolStripMenuItem tssLimitModifierEdit;
         private System.Windows.Forms.TabControl tabCharacterTabs;
         private System.Windows.Forms.TabPage tabCommon;
-        private System.Windows.Forms.TabControl tabPeople;
         private System.Windows.Forms.TabPage tabContacts;
         private System.Windows.Forms.FlowLayoutPanel panContacts;
         private SplitButton cmdAddContact;
@@ -15318,7 +15347,6 @@ namespace Chummer
         private Label lblVehicleWeaponRangeMain;
         private Button cmdCyberwareChangeMount;
         private Button cmdVehicleCyberwareChangeMount;
-        private TabPage tabRelationships;
         private ContextMenuStrip cmsWeaponMount;
         private ToolStripMenuItem tsWeaponMountWeapons;
         private ToolStripMenuItem tsVehicleWeaponMountAddWeapon;
@@ -15368,5 +15396,9 @@ namespace Chummer
         private CheckBox chkWeaponMatrixCM23;
         private CheckBox chkWeaponMatrixCM24;
         private ToolStripMenuItem tsWeaponMountLocation;
+        private TabPage tabStory;
+        private TabControl tabStoryTabs;
+        private TabPage tabMagRes;
+        private TabControl tabMagResTabs;
     }
 }
