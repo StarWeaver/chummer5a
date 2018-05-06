@@ -19281,7 +19281,7 @@ namespace Chummer
                 }
 
                 // Weapons Tab.
-                if (tabStreetGearTabs.SelectedTab == tabWeapons)
+                else if (tabStreetGearTabs.SelectedTab == tabWeapons)
                 {
                     string strSelectedId = treWeapons.SelectedNode?.Tag.ToString();
                     if (!string.IsNullOrEmpty(strSelectedId))
@@ -19293,14 +19293,14 @@ namespace Chummer
                     blnCopyEnabled = CharacterObject.Gear.DeepFindById(treGear.SelectedNode?.Tag.ToString()) != null;
                 }
                 // Cyberware Tab.
-                else if (tabCharacterTabs.SelectedTab == tabCyberware)
+                else if (tabStreetGearTabs.SelectedTab == tabCyberware)
                 {
                     string strSelectedId = treCyberware.SelectedNode?.Tag.ToString();
                     if (!string.IsNullOrEmpty(strSelectedId))
                         blnCopyEnabled = CharacterObject.Cyberware.FindCyberwareGear(strSelectedId) != null;
                 }
                 // Vehicles Tab.
-                else if (tabCharacterTabs.SelectedTab == tabVehicles && treVehicles.SelectedNode != null)
+                else if (tabStreetGearTabs.SelectedTab == tabVehicles && treVehicles.SelectedNode != null)
                 {
                     string strSelectedId = treVehicles.SelectedNode?.Tag.ToString();
                     if (!string.IsNullOrEmpty(strSelectedId))
