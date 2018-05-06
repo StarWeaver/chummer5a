@@ -1044,13 +1044,18 @@ namespace Chummer
                 case nameof(Character.SpiritManipulation):
                     IsCharacterUpdateRequested = true;
                     break;
+
+
                 case nameof(Character.MAGEnabled):
+                case nameof(Character.RESEnabled):
                     {
+                        if (CharacterObject.MAGEnabled || CharacterObject.RESEnabled)
+                            Utils.InsertTabWithOrder(tabMagResTabs, tabInitiation, MagResTabsOrder);
+                        else
+                            tabMagResTabs.TabPages.Remove(tabInitiation);
+
                         if (CharacterObject.MAGEnabled)
                         {
-                            if (!tabCharacterTabs.TabPages.Contains(tabInitiation))
-                                tabCharacterTabs.TabPages.Insert(3, tabInitiation);
-
                             tabInitiation.Text = LanguageManager.GetString("Tab_Initiation", GlobalOptions.Language);
                             tsMetamagicAddMetamagic.Text = LanguageManager.GetString("Button_AddMetamagic", GlobalOptions.Language);
                             cmdAddMetamagic.Text = LanguageManager.GetString("Button_AddInitiateGrade", GlobalOptions.Language);
@@ -1081,7 +1086,6 @@ namespace Chummer
                         }
                         else
                         {
-                            tabCharacterTabs.TabPages.Remove(tabInitiation);
 
                             if (SpecialAttributes.Contains(CharacterObject.MAG))
                             {
@@ -1095,10 +1099,7 @@ namespace Chummer
                         chkInitiationGroup.Visible = CharacterObject.MAGEnabled;
                         chkInitiationOrdeal.Visible = CharacterObject.MAGEnabled;
                         chkInitiationSchooling.Visible = CharacterObject.MAGEnabled;
-                    }
-                    break;
-                case nameof(Character.RESEnabled):
-                    {
+
                         if (CharacterObject.RESEnabled)
                         {
                             tabInitiation.Text = LanguageManager.GetString("Tab_Submersion", GlobalOptions.Language);
