@@ -17,7 +17,8 @@
  *  https://github.com/chummer5a/chummer5a
  */
  using System;
- using System.Diagnostics;
+using System.Collections.Generic;
+using System.Diagnostics;
 ﻿using System.IO;
  using System.Reflection;
  using System.Windows.Forms;
@@ -121,6 +122,37 @@ namespace Chummer
                 objControl.CreateControl();
             }
             objControl.DataBindings.Add(PropertyName, dataSource, dataMember, false, DataSourceUpdateMode.OnPropertyChanged);
+        }
+
+
+        public static void InsertTabWithOrder(TabControl tabs, TabPage tab, List<TabPage> order)
+        {
+            if (tabs.TabPages.Contains(tab))
+                return;
+
+
+            int mypos = order.IndexOf(tab);
+            int targetpos = -1;
+
+            for (int i = mypos + 1; i < order.Count; i++)
+            {
+                // Find the first currently existing tabpage that's ment to be after us
+                // and insert us before that.
+                if (tabs.TabPages.Contains(order[i]))
+                {
+                    targetpos = i - 1;
+                    break;
+                }
+            }
+
+            if (targetpos > 0)
+            {
+                tabs.TabPages.Insert(targetpos, tab);
+            }
+            else
+            {
+                tabs.TabPages.Add(tab);
+            }
         }
     }
 }

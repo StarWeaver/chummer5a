@@ -1572,8 +1572,20 @@
       <text>&amp;Add From File</text>
     </string>
     <string>
+      <key>Tab_Story</key>
+      <text>Story &amp; Stats</text>
+    </string>
+    <string>
+      <key>Tab_MagRes</key>
+      <text>Magic &amp; Resonance</text>
+    </string>
+    <string>
+      <key>Tab_StreeGear</key>
+      <text>Inventory &amp; 'Ware</text>
+    </string>
+    <string>
       <key>Tab_Common</key>
-      <text>Common</text>
+      <text>Qualities &amp; Stats</text>
     </string>
     <string>
       <key>Tab_Skills</key>
@@ -1585,7 +1597,7 @@
     </string>
     <string>
       <key>Tab_Magician</key>
-      <text>Spells and Spirits</text>
+      <text>Spells &amp; Spirits</text>
     </string>
     <string>
       <key>Tab_Adept</key>
@@ -1593,7 +1605,7 @@
     </string>
     <string>
       <key>Tab_Technomancer</key>
-      <text>Complex Forms and Sprites</text>
+      <text>Complex Forms &amp; Sprites</text>
     </string>
     <string>
       <key>Tab_Critter</key>
@@ -1609,12 +1621,9 @@
     </string>
     <string>
       <key>Tab_Cyberware</key>
-      <text>Cyberware and Bioware</text>
+      <text>Cyberware &amp; Bioware</text>
     </string>
-    <string>
-      <key>Tab_StreeGear</key>
-      <text>Street Gear</text>
-    </string>
+    
     <string>
       <key>Tab_Vehicles</key>
       <text>Vehicles &amp;&amp; Drones</text>
@@ -1625,7 +1634,7 @@
     </string>
     <string>
       <key>Tab_Karma</key>
-      <text>Karma and Nuyen</text>
+      <text>Karma &amp; Nuyen</text>
     </string>
     <string>
       <key>Tab_Improvements</key>
@@ -1649,7 +1658,7 @@
     </string>
     <string>
       <key>Tab_OtherInfo</key>
-      <text>Other Info</text>
+      <text>Info</text>
     </string>
     <string>
       <key>Tab_Lifestyle</key>
@@ -1657,7 +1666,7 @@
     </string>
     <string>
       <key>Tab_Armor</key>
-      <text>Clothing and Armor</text>
+      <text>Clothing &amp; Armor</text>
     </string>
     <string>
       <key>Tab_Weapons</key>
@@ -1669,11 +1678,11 @@
     </string>
     <string>
       <key>Tab_Pets</key>
-      <text>Pets and Cohorts</text>
+      <text>Pets &amp; Cohorts</text>
     </string>
     <string>
       <key>Tab_ConditionMonitor</key>
-      <text>Condition Monitor</text>
+      <text>Monitor</text>
     </string>
     <string>
       <key>Tab_PhysicalConditionMonitor</key>
@@ -5505,7 +5514,7 @@ Only one attribute may be at its Maximum value during character creation.</text>
     <!-- Region Spell Defence Tab-->
     <string>
       <key>String_SpellDefense</key>
-      <text>Spell Defense</text>
+      <text>Spl. Def</text>
     </string>
     <string>
       <key>String_SpellResistanceDice</key>

@@ -498,6 +498,10 @@ namespace Chummer
             this.cmdAddCyberware = new SplitButton();
             this.tabStreetGear = new System.Windows.Forms.TabPage();
             this.tabStreetGearTabs = new System.Windows.Forms.TabControl();
+            this.tabStory = new System.Windows.Forms.TabPage();
+            this.tabStoryTabs = new System.Windows.Forms.TabControl();
+            this.tabMagRes = new System.Windows.Forms.TabPage();
+            this.tabMagResTabs = new System.Windows.Forms.TabControl();
             this.tabGear = new System.Windows.Forms.TabPage();
             this.cboGearDataProcessing = new System.Windows.Forms.ComboBox();
             this.cboGearFirewall = new System.Windows.Forms.ComboBox();
@@ -789,8 +793,6 @@ namespace Chummer
             this.picMugshot = new System.Windows.Forms.PictureBox();
             this.tabImprovements = new System.Windows.Forms.TabPage();
             this.panImprovements = new System.Windows.Forms.FlowLayoutPanel();
-            this.tabRelationships = new System.Windows.Forms.TabPage();
-            this.tabPeople = new System.Windows.Forms.TabControl();
             this.tabContacts = new System.Windows.Forms.TabPage();
             this.cmdSwapContactOrder = new System.Windows.Forms.Button();
             this.cmdContactsExpansionToggle = new System.Windows.Forms.Button();
@@ -964,6 +966,10 @@ namespace Chummer
             ((System.ComponentModel.ISupportInitialize)(this.nudCyberwareRating)).BeginInit();
             this.tabStreetGear.SuspendLayout();
             this.tabStreetGearTabs.SuspendLayout();
+            this.tabStory.SuspendLayout();
+            this.tabStoryTabs.SuspendLayout();
+            this.tabMagRes.SuspendLayout();
+            this.tabMagResTabs.SuspendLayout();
             this.tabGear.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudGearQty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGearRating)).BeginInit();
@@ -979,8 +985,6 @@ namespace Chummer
             ((System.ComponentModel.ISupportInitialize)(this.nudMugshotIndex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMugshot)).BeginInit();
             this.tabImprovements.SuspendLayout();
-            this.tabRelationships.SuspendLayout();
-            this.tabPeople.SuspendLayout();
             this.tabContacts.SuspendLayout();
             this.cmsAddContact.SuspendLayout();
             this.tabEnemies.SuspendLayout();
@@ -3256,22 +3260,15 @@ namespace Chummer
             this.tabCharacterTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabCharacterTabs.Controls.Add(this.tabCommon);
-            this.tabCharacterTabs.Controls.Add(this.tabSkills);
-            this.tabCharacterTabs.Controls.Add(this.tabLimits);
-            this.tabCharacterTabs.Controls.Add(this.tabMartialArts);
-            this.tabCharacterTabs.Controls.Add(this.tabMagician);
-            this.tabCharacterTabs.Controls.Add(this.tabAdept);
-            this.tabCharacterTabs.Controls.Add(this.tabTechnomancer);
-            this.tabCharacterTabs.Controls.Add(this.tabAdvancedPrograms);
-            this.tabCharacterTabs.Controls.Add(this.tabCritter);
-            this.tabCharacterTabs.Controls.Add(this.tabInitiation);
-            this.tabCharacterTabs.Controls.Add(this.tabCyberware);
+
+
+            this.tabCharacterTabs.Controls.Add(this.tabStory);
+            this.tabCharacterTabs.Controls.Add(this.tabMagRes);
             this.tabCharacterTabs.Controls.Add(this.tabStreetGear);
-            this.tabCharacterTabs.Controls.Add(this.tabVehicles);
-            this.tabCharacterTabs.Controls.Add(this.tabCharacterInfo);
+
+
             this.tabCharacterTabs.Controls.Add(this.tabImprovements);
-            this.tabCharacterTabs.Controls.Add(this.tabRelationships);
+
             this.tabCharacterTabs.Location = new System.Drawing.Point(0, 0);
             this.tabCharacterTabs.Name = "tabCharacterTabs";
             this.tabCharacterTabs.SelectedIndex = 0;
@@ -5637,6 +5634,8 @@ namespace Chummer
             this.tabStreetGearTabs.Controls.Add(this.tabArmor);
             this.tabStreetGearTabs.Controls.Add(this.tabWeapons);
             this.tabStreetGearTabs.Controls.Add(this.tabLifestyle);
+            this.tabStreetGearTabs.Controls.Add(this.tabCyberware);
+            this.tabStreetGearTabs.Controls.Add(this.tabVehicles);
             this.tabStreetGearTabs.Location = new System.Drawing.Point(3, 3);
             this.tabStreetGearTabs.Name = "tabStreetGearTabs";
             this.tabStreetGearTabs.SelectedIndex = 0;
@@ -5644,6 +5643,68 @@ namespace Chummer
             this.tabStreetGearTabs.Size = new System.Drawing.Size(839, 605);
             this.tabStreetGearTabs.TabIndex = 87;
             this.tabStreetGearTabs.SelectedIndexChanged += new System.EventHandler(this.tabStreetGearTabs_SelectedIndexChanged);
+            // 
+            // tabStory
+            // 
+            this.tabStory.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tabStory.Controls.Add(this.tabStoryTabs);
+            this.tabStory.Location = new System.Drawing.Point(4, 22);
+            this.tabStory.Name = "tabStory";
+            this.tabStory.Size = new System.Drawing.Size(840, 611);
+            this.tabStory.TabIndex = 5;
+            this.tabStory.Tag = "Tab_Story";
+            this.tabStory.Text = "Story";
+            // 
+            // tabStoryTabs
+            // 
+            this.tabStoryTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabStoryTabs.Controls.Add(this.tabCharacterInfo);
+            this.tabStoryTabs.Controls.Add(this.tabCommon);
+            this.tabStoryTabs.Controls.Add(this.tabSkills);
+            this.tabStoryTabs.Controls.Add(this.tabLimits);
+            this.tabStoryTabs.Controls.Add(this.tabMartialArts);
+            this.tabStoryTabs.Controls.Add(this.tabContacts);
+            this.tabStoryTabs.Controls.Add(this.tabEnemies);
+            this.tabStoryTabs.Controls.Add(this.tabPets);
+            this.tabStoryTabs.Location = new System.Drawing.Point(3, 3);
+            this.tabStoryTabs.Name = "tabStoryTabs";
+            this.tabStoryTabs.SelectedIndex = 0;
+            this.tabStoryTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabStoryTabs.Size = new System.Drawing.Size(839, 605);
+            this.tabStoryTabs.TabIndex = 87;
+            this.tabStoryTabs.SelectedIndexChanged += new System.EventHandler(this.tabStoryTabs_SelectedIndexChanged);
+            // 
+            // tabMagRes
+            // 
+            this.tabMagRes.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tabMagRes.Controls.Add(this.tabMagResTabs);
+            this.tabMagRes.Location = new System.Drawing.Point(4, 22);
+            this.tabMagRes.Name = "tabMagRes";
+            this.tabMagRes.Size = new System.Drawing.Size(840, 611);
+            this.tabMagRes.TabIndex = 5;
+            this.tabMagRes.Tag = "Tab_MagRes";
+            this.tabMagRes.Text = "Magic & Resonance";
+            // 
+            // tabMagResTabs
+            // 
+            this.tabMagResTabs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabMagResTabs.Controls.Add(this.tabMagician);
+            this.tabMagResTabs.Controls.Add(this.tabAdept);
+            this.tabMagResTabs.Controls.Add(this.tabTechnomancer);
+            this.tabMagResTabs.Controls.Add(this.tabInitiation);
+            this.tabMagResTabs.Controls.Add(this.tabAdvancedPrograms);
+            this.tabMagResTabs.Controls.Add(this.tabCritter);
+            this.tabMagResTabs.Location = new System.Drawing.Point(3, 3);
+            this.tabMagResTabs.Name = "tabMagResTabs";
+            this.tabMagResTabs.SelectedIndex = 0;
+            this.tabMagResTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabMagResTabs.Size = new System.Drawing.Size(839, 605);
+            this.tabMagResTabs.TabIndex = 87;
+            this.tabMagResTabs.SelectedIndexChanged += new System.EventHandler(this.tabMagResTabs_SelectedIndexChanged);
             // 
             // tabGear
             // 
@@ -8951,30 +9012,6 @@ namespace Chummer
             this.panImprovements.Size = new System.Drawing.Size(831, 599);
             this.panImprovements.TabIndex = 0;
             // 
-            // tabRelationships
-            // 
-            this.tabRelationships.Controls.Add(this.tabPeople);
-            this.tabRelationships.Location = new System.Drawing.Point(4, 22);
-            this.tabRelationships.Name = "tabRelationships";
-            this.tabRelationships.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRelationships.Size = new System.Drawing.Size(840, 611);
-            this.tabRelationships.TabIndex = 16;
-            this.tabRelationships.Tag = "String_Relationships";
-            this.tabRelationships.Text = "Relationships";
-            this.tabRelationships.UseVisualStyleBackColor = true;
-            // 
-            // tabPeople
-            // 
-            this.tabPeople.Controls.Add(this.tabContacts);
-            this.tabPeople.Controls.Add(this.tabEnemies);
-            this.tabPeople.Controls.Add(this.tabPets);
-            this.tabPeople.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabPeople.Location = new System.Drawing.Point(3, 3);
-            this.tabPeople.Name = "tabPeople";
-            this.tabPeople.SelectedIndex = 0;
-            this.tabPeople.Size = new System.Drawing.Size(834, 605);
-            this.tabPeople.TabIndex = 94;
-            // 
             // tabContacts
             // 
             this.tabContacts.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -10339,6 +10376,10 @@ namespace Chummer
             ((System.ComponentModel.ISupportInitialize)(this.nudCyberwareRating)).EndInit();
             this.tabStreetGear.ResumeLayout(false);
             this.tabStreetGearTabs.ResumeLayout(false);
+            this.tabStory.ResumeLayout(false);
+            this.tabStoryTabs.ResumeLayout(false);
+            this.tabMagRes.ResumeLayout(false);
+            this.tabMagResTabs.ResumeLayout(false);
             this.tabGear.ResumeLayout(false);
             this.tabGear.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudGearQty)).EndInit();
@@ -10360,8 +10401,6 @@ namespace Chummer
             ((System.ComponentModel.ISupportInitialize)(this.nudMugshotIndex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMugshot)).EndInit();
             this.tabImprovements.ResumeLayout(false);
-            this.tabRelationships.ResumeLayout(false);
-            this.tabPeople.ResumeLayout(false);
             this.tabContacts.ResumeLayout(false);
             this.tabContacts.PerformLayout();
             this.cmsAddContact.ResumeLayout(false);
@@ -10414,6 +10453,8 @@ namespace Chummer
         private System.Windows.Forms.TabPage tabTechnomancer;
         private System.Windows.Forms.TabPage tabCyberware;
         private System.Windows.Forms.TabPage tabStreetGear;
+        private System.Windows.Forms.TabPage tabStory;
+        private System.Windows.Forms.TabPage tabMagRes;
         private System.Windows.Forms.TreeView treQualities;
         private System.Windows.Forms.Button cmdAddSpirit;
         private System.Windows.Forms.Label lblSpirits;
@@ -10532,6 +10573,8 @@ namespace Chummer
         private System.Windows.Forms.Label lblLifestyleMonthsLabel;
         private System.Windows.Forms.NumericUpDown nudLifestyleMonths;
         private System.Windows.Forms.TabControl tabStreetGearTabs;
+        private System.Windows.Forms.TabControl tabStoryTabs;
+        private System.Windows.Forms.TabControl tabMagResTabs;
         private System.Windows.Forms.TabPage tabLifestyle;
         private System.Windows.Forms.TabPage tabArmor;
         private System.Windows.Forms.TabPage tabWeapons;
@@ -11057,7 +11100,6 @@ namespace Chummer
         private System.Windows.Forms.ComboBox cboSpiritDetection;
         private System.Windows.Forms.Label lblSpiritDetection;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TabControl tabPeople;
         private System.Windows.Forms.TabPage tabContacts;
         private SplitButton cmdAddContact;
         private System.Windows.Forms.FlowLayoutPanel panContacts;
@@ -11220,7 +11262,6 @@ namespace Chummer
         private System.Windows.Forms.ToolStripMenuItem tsVehicleMountWeaponAdd;
         private System.Windows.Forms.ToolStripMenuItem tsVehicleMountWeaponAccessory;
         private System.Windows.Forms.ToolStripMenuItem tsVehicleMountWeaponUnderbarrel;
-        private System.Windows.Forms.TabPage tabRelationships;
         private System.Windows.Forms.Button cmdContactsExpansionToggle;
         private System.Windows.Forms.Button cmdSwapContactOrder;
         private System.Windows.Forms.ToolStripMenuItem tsWeaponLocationAddWeapon;
