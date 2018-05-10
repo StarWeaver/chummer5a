@@ -980,7 +980,7 @@ namespace Chummer
             TabPage objPage = tabCharacterTabs.SelectedTab;
             // Reseize the form elements with the form.
             // Character Info Tab.
-            int intHeight = ((objPage.Height - lblDescription.Top) / 4 - 20);
+            int intHeight = ((objPage.Height - lblDescription.Top) / 4 - 26);
             txtDescription.Height = intHeight;
             lblBackground.Top = txtDescription.Top + txtDescription.Height + 3;
             txtBackground.Top = lblBackground.Top + lblBackground.Height + 3;
@@ -18642,8 +18642,6 @@ namespace Chummer
 
             // Reposition controls based on their new sizes.
             // Common Tab.
-            txtAlias.Left = lblAlias.Left + lblAlias.Width + 6;
-            txtAlias.Width = lblMetatypeLabel.Left - 6 - txtAlias.Left;
             cmdSwapQuality.Left = cmdAddQuality.Left + cmdAddQuality.Width + 6;
             cmdDeleteQuality.Left = cmdSwapQuality.Left + cmdSwapQuality.Width + 6;
             // Martial Arts Tab.
@@ -18685,9 +18683,6 @@ namespace Chummer
         private void MoveControls()
         {
             // Common tab.
-            lblAlias.Left = Math.Max(288, cmdDeleteQuality.Left + cmdDeleteQuality.Width + 6);
-            txtAlias.Left = lblAlias.Left + lblAlias.Width + 6;
-            txtAlias.Width = lblMetatypeLabel.Left - txtAlias.Left - 6;
 
             // Skills tab.
 
@@ -19045,32 +19040,35 @@ namespace Chummer
             chkVehicleWeaponAccessoryInstalled.Left = lblVehicleSlotsLabel.Left;
 
             // Character Info.
-            intWidth = Math.Max(lblSex.Width, lblHeight.Width);
-            txtSex.Left = lblSex.Left + intWidth + 6;
-            txtSex.Width = lblAge.Left - txtSex.Left - 16;
+            intWidth = Math.Max(lblPlayerName.Width, lblHeight.Width);
+            txtPlayerName.Left = lblPlayerName.Left + intWidth + 6;
+            txtPlayerName.Width = lblCharacterName.Left - txtPlayerName.Left - 16;
             txtHeight.Left = lblHeight.Left + intWidth + 6;
             txtHeight.Width = lblWeight.Left - txtHeight.Left - 16;
 
-            intWidth = Math.Max(lblAge.Width, lblWeight.Width);
-            txtAge.Left = lblAge.Left + intWidth + 6;
-            txtAge.Width = lblEyes.Left - txtAge.Left - 16;
+            intWidth = Math.Max(lblCharacterName.Width, lblWeight.Width);
+            txtCharacterName.Left = lblCharacterName.Left + intWidth + 6;
+            txtCharacterName.Width = lblAlias.Left - txtCharacterName.Left - 16;
             txtWeight.Left = lblWeight.Left + intWidth + 6;
             txtWeight.Width = lblSkin.Left - txtWeight.Left - 16;
 
-            intWidth = Math.Max(lblEyes.Width, lblSkin.Width);
+            intWidth = Math.Max(lblAlias.Width, lblSkin.Width);
+            txtAlias.Left = lblAlias.Left + intWidth + 6;
+            txtAlias.Width = lblAge.Left - txtAlias.Left - 16;
+            txtSkin.Left = lblSkin.Left + intWidth + 6;
+            txtSkin.Width = lblEyes.Left - txtSkin.Left - 16;
+
+            intWidth = Math.Max(lblAge.Width, lblEyes.Width);
+            txtAge.Left = lblAge.Left + intWidth + 6;
+            txtAge.Width = lblSex.Left - txtAge.Left - 16;
             txtEyes.Left = lblEyes.Left + intWidth + 6;
             txtEyes.Width = lblHair.Left - txtEyes.Left - 16;
-            txtSkin.Left = lblSkin.Left + intWidth + 6;
-            txtSkin.Width = lblCharacterName.Left - txtSkin.Left - 16;
 
-            intWidth = Math.Max(lblHair.Width, lblCharacterName.Width);
+            intWidth = Math.Max(lblSex.Width, lblHair.Width);
+            txtSex.Left = lblSex.Left + intWidth + 6;
+            txtSex.Width = tabCharacterInfo.Width - txtSex.Left - 16;
             txtHair.Left = lblHair.Left + intWidth + 6;
-            txtHair.Width = lblPlayerName.Left - txtHair.Left - 16;
-            txtCharacterName.Left = lblCharacterName.Left + intWidth + 6;
-            txtCharacterName.Width = lblPlayerName.Left - txtCharacterName.Left - 16;
-
-            txtPlayerName.Left = lblPlayerName.Left + lblPlayerName.Width + 6;
-            txtPlayerName.Width = tabCharacterInfo.Width - txtPlayerName.Left - 16;
+            txtHair.Width = tabCharacterInfo.Width - txtHair.Left - 16;
 
             intWidth = Math.Max(lblStreetCred.Width, lblNotoriety.Width);
             intWidth = Math.Max(intWidth, lblPublicAware.Width);

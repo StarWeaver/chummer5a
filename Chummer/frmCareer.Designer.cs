@@ -4626,8 +4626,6 @@ namespace Chummer
             this.tabCommon.Controls.Add(this.lblAttributes);
             this.tabCommon.Controls.Add(this.pnlAttributes);
             this.tabCommon.Controls.Add(this.lblPossessed);
-            this.tabCommon.Controls.Add(this.txtAlias);
-            this.tabCommon.Controls.Add(this.lblAlias);
             this.tabCommon.Controls.Add(this.lblMetatypeSource);
             this.tabCommon.Controls.Add(this.lblMetatypeSourceLabel);
             this.tabCommon.Controls.Add(this.cmdSwapQuality);
@@ -4718,23 +4716,6 @@ namespace Chummer
             this.lblPossessed.Size = new System.Drawing.Size(33, 13);
             this.lblPossessed.TabIndex = 90;
             this.lblPossessed.Text = "None";
-            // 
-            // txtAlias
-            // 
-            this.txtAlias.Location = new System.Drawing.Point(326, 6);
-            this.txtAlias.Name = "txtAlias";
-            this.txtAlias.Size = new System.Drawing.Size(270, 20);
-            this.txtAlias.TabIndex = 89;
-            // 
-            // lblAlias
-            // 
-            this.lblAlias.AutoSize = true;
-            this.lblAlias.Location = new System.Drawing.Point(288, 9);
-            this.lblAlias.Name = "lblAlias";
-            this.lblAlias.Size = new System.Drawing.Size(32, 13);
-            this.lblAlias.TabIndex = 88;
-            this.lblAlias.Tag = "Label_Alias";
-            this.lblAlias.Text = "Alias:";
             // 
             // lblMetatypeSource
             // 
@@ -12514,10 +12495,12 @@ namespace Chummer
             this.tabCharacterInfo.Controls.Add(this.lblEyes);
             this.tabCharacterInfo.Controls.Add(this.lblAge);
             this.tabCharacterInfo.Controls.Add(this.lblSex);
+            this.tabCharacterInfo.Controls.Add(this.txtAlias);
+            this.tabCharacterInfo.Controls.Add(this.lblAlias);
             this.tabCharacterInfo.Controls.Add(this.picMugshot);
             this.tabCharacterInfo.Location = new System.Drawing.Point(4, 22);
             this.tabCharacterInfo.Name = "tabCharacterInfo";
-            this.tabCharacterInfo.Size = new System.Drawing.Size(861, 669);
+            this.tabCharacterInfo.Size = new System.Drawing.Size(853, 643);
             this.tabCharacterInfo.TabIndex = 9;
             this.tabCharacterInfo.Tag = "Tab_CharacterInfo";
             this.tabCharacterInfo.Text = "Character Info";
@@ -12606,7 +12589,7 @@ namespace Chummer
             // lblCharacterName
             // 
             this.lblCharacterName.AutoSize = true;
-            this.lblCharacterName.Location = new System.Drawing.Point(493, 38);
+            this.lblCharacterName.Location = new System.Drawing.Point(172, 12);
             this.lblCharacterName.Name = "lblCharacterName";
             this.lblCharacterName.Size = new System.Drawing.Size(38, 13);
             this.lblCharacterName.TabIndex = 77;
@@ -12615,14 +12598,14 @@ namespace Chummer
             // 
             // txtCharacterName
             // 
-            this.txtCharacterName.Location = new System.Drawing.Point(543, 35);
+            this.txtCharacterName.Location = new System.Drawing.Point(222, 9);
             this.txtCharacterName.Name = "txtCharacterName";
             this.txtCharacterName.Size = new System.Drawing.Size(100, 20);
             this.txtCharacterName.TabIndex = 78;
             // 
             // txtPlayerName
             // 
-            this.txtPlayerName.Location = new System.Drawing.Point(705, 35);
+            this.txtPlayerName.Location = new System.Drawing.Point(54, 9);
             this.txtPlayerName.Name = "txtPlayerName";
             this.txtPlayerName.Size = new System.Drawing.Size(100, 20);
             this.txtPlayerName.TabIndex = 66;
@@ -12690,28 +12673,28 @@ namespace Chummer
             // 
             // txtHair
             // 
-            this.txtHair.Location = new System.Drawing.Point(543, 9);
+            this.txtHair.Location = new System.Drawing.Point(705, 35);
             this.txtHair.Name = "txtHair";
             this.txtHair.Size = new System.Drawing.Size(100, 20);
             this.txtHair.TabIndex = 7;
             // 
             // txtEyes
-            // 
-            this.txtEyes.Location = new System.Drawing.Point(375, 9);
+            //
+            this.txtEyes.Location = new System.Drawing.Point(543, 35);
             this.txtEyes.Name = "txtEyes";
             this.txtEyes.Size = new System.Drawing.Size(100, 20);
             this.txtEyes.TabIndex = 5;
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(222, 9);
+            this.txtAge.Location = new System.Drawing.Point(543, 9);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(100, 20);
             this.txtAge.TabIndex = 3;
             // 
             // txtSex
             // 
-            this.txtSex.Location = new System.Drawing.Point(54, 9);
+            this.txtSex.Location = new System.Drawing.Point(705, 9);
             this.txtSex.Name = "txtSex";
             this.txtSex.Size = new System.Drawing.Size(100, 20);
             this.txtSex.TabIndex = 1;
@@ -12750,7 +12733,7 @@ namespace Chummer
             // lblPlayerName
             // 
             this.lblPlayerName.AutoSize = true;
-            this.lblPlayerName.Location = new System.Drawing.Point(654, 38);
+            this.lblPlayerName.Location = new System.Drawing.Point(8, 12);
             this.lblPlayerName.Name = "lblPlayerName";
             this.lblPlayerName.Size = new System.Drawing.Size(39, 13);
             this.lblPlayerName.TabIndex = 65;
@@ -12862,7 +12845,7 @@ namespace Chummer
             // lblHair
             // 
             this.lblHair.AutoSize = true;
-            this.lblHair.Location = new System.Drawing.Point(493, 12);
+            this.lblHair.Location = new System.Drawing.Point(654, 38);
             this.lblHair.Name = "lblHair";
             this.lblHair.Size = new System.Drawing.Size(29, 13);
             this.lblHair.TabIndex = 6;
@@ -12872,7 +12855,7 @@ namespace Chummer
             // lblEyes
             // 
             this.lblEyes.AutoSize = true;
-            this.lblEyes.Location = new System.Drawing.Point(340, 12);
+            this.lblEyes.Location = new System.Drawing.Point(493, 38);
             this.lblEyes.Name = "lblEyes";
             this.lblEyes.Size = new System.Drawing.Size(33, 13);
             this.lblEyes.TabIndex = 4;
@@ -12882,7 +12865,7 @@ namespace Chummer
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(172, 12);
+            this.lblAge.Location = new System.Drawing.Point(493, 12);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(29, 13);
             this.lblAge.TabIndex = 2;
@@ -12892,12 +12875,29 @@ namespace Chummer
             // lblSex
             // 
             this.lblSex.AutoSize = true;
-            this.lblSex.Location = new System.Drawing.Point(8, 12);
+            this.lblSex.Location = new System.Drawing.Point(654, 12);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(28, 13);
             this.lblSex.TabIndex = 0;
             this.lblSex.Tag = "Label_Sex";
             this.lblSex.Text = "Sex:";
+            // 
+            // txtAlias
+            // 
+            this.txtAlias.Location = new System.Drawing.Point(375, 9);
+            this.txtAlias.Name = "txtAlias";
+            this.txtAlias.Size = new System.Drawing.Size(100, 20);
+            this.txtAlias.TabIndex = 89;
+            // 
+            // lblAlias
+            // 
+            this.lblAlias.AutoSize = true;
+            this.lblAlias.Location = new System.Drawing.Point(340, 12);
+            this.lblAlias.Name = "lblAlias";
+            this.lblAlias.Size = new System.Drawing.Size(32, 13);
+            this.lblAlias.TabIndex = 88;
+            this.lblAlias.Tag = "Label_Alias";
+            this.lblAlias.Text = "Alias:";
             // 
             // picMugshot
             // 
