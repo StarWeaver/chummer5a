@@ -1781,7 +1781,7 @@ namespace Chummer
             this.lblStreetCred.Location = new System.Drawing.Point(654, 97);
             this.lblStreetCred.Name = "lblStreetCred";
             this.lblStreetCred.Size = new System.Drawing.Size(63, 13);
-            this.lblStreetCred.TabIndex = 71;
+            this.lblStreetCred.TabIndex = 31;
             this.lblStreetCred.Tag = "Label_StreetCred";
             this.lblStreetCred.Text = "Street Cred:";
             // 
@@ -1791,7 +1791,7 @@ namespace Chummer
             this.lblNotoriety.Location = new System.Drawing.Point(654, 119);
             this.lblNotoriety.Name = "lblNotoriety";
             this.lblNotoriety.Size = new System.Drawing.Size(52, 13);
-            this.lblNotoriety.TabIndex = 73;
+            this.lblNotoriety.TabIndex = 34;
             this.lblNotoriety.Tag = "Label_Notoriety";
             this.lblNotoriety.Text = "Notoriety:";
             // 
@@ -12512,7 +12512,7 @@ namespace Chummer
             this.cboPrimaryArm.Location = new System.Drawing.Point(731, 66);
             this.cboPrimaryArm.Name = "cboPrimaryArm";
             this.cboPrimaryArm.Size = new System.Drawing.Size(100, 21);
-            this.cboPrimaryArm.TabIndex = 95;
+            this.cboPrimaryArm.TabIndex = 30;
             this.cboPrimaryArm.SelectedIndexChanged += new System.EventHandler(this.cboPrimaryArm_SelectedIndexChanged);
             // 
             // lblHandedness
@@ -12521,7 +12521,7 @@ namespace Chummer
             this.lblHandedness.Location = new System.Drawing.Point(654, 69);
             this.lblHandedness.Name = "lblHandedness";
             this.lblHandedness.Size = new System.Drawing.Size(70, 13);
-            this.lblHandedness.TabIndex = 94;
+            this.lblHandedness.TabIndex = 29;
             this.lblHandedness.Tag = "Label_Handedness";
             this.lblHandedness.Text = "Handedness:";
             // 
@@ -12531,7 +12531,7 @@ namespace Chummer
             this.chkIsMainMugshot.Location = new System.Drawing.Point(644, 237);
             this.chkIsMainMugshot.Name = "chkIsMainMugshot";
             this.chkIsMainMugshot.Size = new System.Drawing.Size(104, 17);
-            this.chkIsMainMugshot.TabIndex = 97;
+            this.chkIsMainMugshot.TabIndex = 45;
             this.chkIsMainMugshot.Tag = "Checkbox_IsMainMugshot";
             this.chkIsMainMugshot.Text = "Is Main Mugshot";
             this.chkIsMainMugshot.UseVisualStyleBackColor = true;
@@ -12543,7 +12543,7 @@ namespace Chummer
             this.lblNumMugshots.Location = new System.Drawing.Point(762, 185);
             this.lblNumMugshots.Name = "lblNumMugshots";
             this.lblNumMugshots.Size = new System.Drawing.Size(21, 13);
-            this.lblNumMugshots.TabIndex = 96;
+            this.lblNumMugshots.TabIndex = 42;
             this.lblNumMugshots.Tag = "";
             this.lblNumMugshots.Text = "/ 0";
             // 
@@ -12552,7 +12552,7 @@ namespace Chummer
             this.nudMugshotIndex.Location = new System.Drawing.Point(719, 182);
             this.nudMugshotIndex.Name = "nudMugshotIndex";
             this.nudMugshotIndex.Size = new System.Drawing.Size(42, 20);
-            this.nudMugshotIndex.TabIndex = 95;
+            this.nudMugshotIndex.TabIndex = 41;
             this.nudMugshotIndex.ValueChanged += new System.EventHandler(this.nudMugshotIndex_ValueChanged);
             // 
             // lblPublicAwareTotal
@@ -12561,7 +12561,7 @@ namespace Chummer
             this.lblPublicAwareTotal.Location = new System.Drawing.Point(779, 142);
             this.lblPublicAwareTotal.Name = "lblPublicAwareTotal";
             this.lblPublicAwareTotal.Size = new System.Drawing.Size(19, 13);
-            this.lblPublicAwareTotal.TabIndex = 81;
+            this.lblPublicAwareTotal.TabIndex = 39;
             this.lblPublicAwareTotal.Tag = "Label_StreetCred";
             this.lblPublicAwareTotal.Text = "[0]";
             // 
@@ -12571,7 +12571,7 @@ namespace Chummer
             this.lblNotorietyTotal.Location = new System.Drawing.Point(779, 119);
             this.lblNotorietyTotal.Name = "lblNotorietyTotal";
             this.lblNotorietyTotal.Size = new System.Drawing.Size(19, 13);
-            this.lblNotorietyTotal.TabIndex = 80;
+            this.lblNotorietyTotal.TabIndex = 36;
             this.lblNotorietyTotal.Tag = "Label_StreetCred";
             this.lblNotorietyTotal.Text = "[0]";
             // 
@@ -12581,7 +12581,7 @@ namespace Chummer
             this.lblStreetCredTotal.Location = new System.Drawing.Point(779, 97);
             this.lblStreetCredTotal.Name = "lblStreetCredTotal";
             this.lblStreetCredTotal.Size = new System.Drawing.Size(19, 13);
-            this.lblStreetCredTotal.TabIndex = 79;
+            this.lblStreetCredTotal.TabIndex = 33;
             this.lblStreetCredTotal.Tag = "Label_StreetCred";
             this.lblStreetCredTotal.Text = "[0]";
             this.lblStreetCredTotal.TextChanged += AdjustBurnStreetCredButtonLocation;
@@ -12592,7 +12592,7 @@ namespace Chummer
             this.lblCharacterName.Location = new System.Drawing.Point(172, 12);
             this.lblCharacterName.Name = "lblCharacterName";
             this.lblCharacterName.Size = new System.Drawing.Size(38, 13);
-            this.lblCharacterName.TabIndex = 77;
+            this.lblCharacterName.TabIndex = 3;
             this.lblCharacterName.Tag = "Label_CharacterName";
             this.lblCharacterName.Text = "Name:";
             // 
@@ -12601,14 +12601,14 @@ namespace Chummer
             this.txtCharacterName.Location = new System.Drawing.Point(222, 9);
             this.txtCharacterName.Name = "txtCharacterName";
             this.txtCharacterName.Size = new System.Drawing.Size(100, 20);
-            this.txtCharacterName.TabIndex = 78;
+            this.txtCharacterName.TabIndex = 4;
             // 
             // txtPlayerName
             // 
             this.txtPlayerName.Location = new System.Drawing.Point(54, 9);
             this.txtPlayerName.Name = "txtPlayerName";
             this.txtPlayerName.Size = new System.Drawing.Size(100, 20);
-            this.txtPlayerName.TabIndex = 66;
+            this.txtPlayerName.TabIndex = 2;
             // 
             // txtNotes
             // 
@@ -12617,7 +12617,7 @@ namespace Chummer
             this.txtNotes.Name = "txtNotes";
             this.txtNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtNotes.Size = new System.Drawing.Size(618, 100);
-            this.txtNotes.TabIndex = 25;
+            this.txtNotes.TabIndex = 28;
             this.txtNotes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNotes_KeyDown);
             // 
             // txtConcept
@@ -12627,7 +12627,7 @@ namespace Chummer
             this.txtConcept.Name = "txtConcept";
             this.txtConcept.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtConcept.Size = new System.Drawing.Size(618, 100);
-            this.txtConcept.TabIndex = 19;
+            this.txtConcept.TabIndex = 26;
             this.txtConcept.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNotes_KeyDown);
             // 
             // txtBackground
@@ -12637,7 +12637,7 @@ namespace Chummer
             this.txtBackground.Name = "txtBackground";
             this.txtBackground.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtBackground.Size = new System.Drawing.Size(618, 96);
-            this.txtBackground.TabIndex = 17;
+            this.txtBackground.TabIndex = 24;
             this.txtBackground.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNotes_KeyDown);
             // 
             // txtDescription
@@ -12647,7 +12647,7 @@ namespace Chummer
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtDescription.Size = new System.Drawing.Size(618, 101);
-            this.txtDescription.TabIndex = 15;
+            this.txtDescription.TabIndex = 22;
             this.txtDescription.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNotes_KeyDown);
             // 
             // txtSkin
@@ -12655,56 +12655,56 @@ namespace Chummer
             this.txtSkin.Location = new System.Drawing.Point(375, 35);
             this.txtSkin.Name = "txtSkin";
             this.txtSkin.Size = new System.Drawing.Size(100, 20);
-            this.txtSkin.TabIndex = 13;
+            this.txtSkin.TabIndex = 16;
             // 
             // txtWeight
             // 
             this.txtWeight.Location = new System.Drawing.Point(222, 35);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(100, 20);
-            this.txtWeight.TabIndex = 11;
+            this.txtWeight.TabIndex = 14;
             // 
             // txtHeight
             // 
             this.txtHeight.Location = new System.Drawing.Point(54, 35);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(100, 20);
-            this.txtHeight.TabIndex = 9;
+            this.txtHeight.TabIndex = 12;
             // 
             // txtHair
             // 
             this.txtHair.Location = new System.Drawing.Point(705, 35);
             this.txtHair.Name = "txtHair";
             this.txtHair.Size = new System.Drawing.Size(100, 20);
-            this.txtHair.TabIndex = 7;
+            this.txtHair.TabIndex = 20;
             // 
             // txtEyes
             //
             this.txtEyes.Location = new System.Drawing.Point(543, 35);
             this.txtEyes.Name = "txtEyes";
             this.txtEyes.Size = new System.Drawing.Size(100, 20);
-            this.txtEyes.TabIndex = 5;
+            this.txtEyes.TabIndex = 18;
             // 
             // txtAge
             // 
             this.txtAge.Location = new System.Drawing.Point(543, 9);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(100, 20);
-            this.txtAge.TabIndex = 3;
+            this.txtAge.TabIndex = 8;
             // 
             // txtSex
             // 
             this.txtSex.Location = new System.Drawing.Point(705, 9);
             this.txtSex.Name = "txtSex";
             this.txtSex.Size = new System.Drawing.Size(100, 20);
-            this.txtSex.TabIndex = 1;
+            this.txtSex.TabIndex = 10;
             // 
             // nudPublicAware
             // 
             this.nudPublicAware.Location = new System.Drawing.Point(731, 140);
             this.nudPublicAware.Name = "nudPublicAware";
             this.nudPublicAware.Size = new System.Drawing.Size(42, 20);
-            this.nudPublicAware.TabIndex = 76;
+            this.nudPublicAware.TabIndex = 38;
             // 
             // lblPublicAware
             // 
@@ -12712,7 +12712,7 @@ namespace Chummer
             this.lblPublicAware.Location = new System.Drawing.Point(654, 142);
             this.lblPublicAware.Name = "lblPublicAware";
             this.lblPublicAware.Size = new System.Drawing.Size(72, 13);
-            this.lblPublicAware.TabIndex = 75;
+            this.lblPublicAware.TabIndex = 37;
             this.lblPublicAware.Tag = "Label_PublicAwareness";
             this.lblPublicAware.Text = "Public Aware:";
             // 
@@ -12721,14 +12721,14 @@ namespace Chummer
             this.nudNotoriety.Location = new System.Drawing.Point(731, 117);
             this.nudNotoriety.Name = "nudNotoriety";
             this.nudNotoriety.Size = new System.Drawing.Size(42, 20);
-            this.nudNotoriety.TabIndex = 74;
+            this.nudNotoriety.TabIndex = 35;
             // 
             // nudStreetCred
             // 
             this.nudStreetCred.Location = new System.Drawing.Point(731, 94);
             this.nudStreetCred.Name = "nudStreetCred";
             this.nudStreetCred.Size = new System.Drawing.Size(42, 20);
-            this.nudStreetCred.TabIndex = 72;
+            this.nudStreetCred.TabIndex = 32;
             // 
             // lblPlayerName
             // 
@@ -12736,7 +12736,7 @@ namespace Chummer
             this.lblPlayerName.Location = new System.Drawing.Point(8, 12);
             this.lblPlayerName.Name = "lblPlayerName";
             this.lblPlayerName.Size = new System.Drawing.Size(39, 13);
-            this.lblPlayerName.TabIndex = 65;
+            this.lblPlayerName.TabIndex = 1;
             this.lblPlayerName.Tag = "Label_Player";
             this.lblPlayerName.Text = "Player:";
             // 
@@ -12746,7 +12746,7 @@ namespace Chummer
             this.lblNotes.Location = new System.Drawing.Point(8, 418);
             this.lblNotes.Name = "lblNotes";
             this.lblNotes.Size = new System.Drawing.Size(38, 13);
-            this.lblNotes.TabIndex = 24;
+            this.lblNotes.TabIndex = 27;
             this.lblNotes.Tag = "Label_Notes";
             this.lblNotes.Text = "Notes:";
             // 
@@ -12755,7 +12755,7 @@ namespace Chummer
             this.cmdDeleteMugshot.Location = new System.Drawing.Point(708, 208);
             this.cmdDeleteMugshot.Name = "cmdDeleteMugshot";
             this.cmdDeleteMugshot.Size = new System.Drawing.Size(58, 23);
-            this.cmdDeleteMugshot.TabIndex = 23;
+            this.cmdDeleteMugshot.TabIndex = 44;
             this.cmdDeleteMugshot.Tag = "String_Delete";
             this.cmdDeleteMugshot.Text = "Delete";
             this.cmdDeleteMugshot.UseVisualStyleBackColor = true;
@@ -12766,7 +12766,7 @@ namespace Chummer
             this.cmdAddMugshot.Location = new System.Drawing.Point(644, 208);
             this.cmdAddMugshot.Name = "cmdAddMugshot";
             this.cmdAddMugshot.Size = new System.Drawing.Size(58, 23);
-            this.cmdAddMugshot.TabIndex = 22;
+            this.cmdAddMugshot.TabIndex = 43;
             this.cmdAddMugshot.Tag = "Button_AddMugshot";
             this.cmdAddMugshot.Text = "Add";
             this.cmdAddMugshot.UseVisualStyleBackColor = true;
@@ -12778,7 +12778,7 @@ namespace Chummer
             this.lblMugshot.Location = new System.Drawing.Point(642, 184);
             this.lblMugshot.Name = "lblMugshot";
             this.lblMugshot.Size = new System.Drawing.Size(51, 13);
-            this.lblMugshot.TabIndex = 21;
+            this.lblMugshot.TabIndex = 40;
             this.lblMugshot.Tag = "Label_Mugshot";
             this.lblMugshot.Text = "Mugshot:";
             // 
@@ -12788,7 +12788,7 @@ namespace Chummer
             this.lblConcept.Location = new System.Drawing.Point(8, 299);
             this.lblConcept.Name = "lblConcept";
             this.lblConcept.Size = new System.Drawing.Size(50, 13);
-            this.lblConcept.TabIndex = 18;
+            this.lblConcept.TabIndex = 25;
             this.lblConcept.Tag = "Label_Concept";
             this.lblConcept.Text = "Concept:";
             // 
@@ -12798,7 +12798,7 @@ namespace Chummer
             this.lblBackground.Location = new System.Drawing.Point(8, 184);
             this.lblBackground.Name = "lblBackground";
             this.lblBackground.Size = new System.Drawing.Size(68, 13);
-            this.lblBackground.TabIndex = 16;
+            this.lblBackground.TabIndex = 23;
             this.lblBackground.Tag = "Label_Background";
             this.lblBackground.Text = "Background:";
             // 
@@ -12808,7 +12808,7 @@ namespace Chummer
             this.lblDescription.Location = new System.Drawing.Point(8, 64);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(63, 13);
-            this.lblDescription.TabIndex = 14;
+            this.lblDescription.TabIndex = 21;
             this.lblDescription.Tag = "Label_Description";
             this.lblDescription.Text = "Description:";
             // 
@@ -12818,7 +12818,7 @@ namespace Chummer
             this.lblSkin.Location = new System.Drawing.Point(340, 38);
             this.lblSkin.Name = "lblSkin";
             this.lblSkin.Size = new System.Drawing.Size(31, 13);
-            this.lblSkin.TabIndex = 12;
+            this.lblSkin.TabIndex = 15;
             this.lblSkin.Tag = "Label_Skin";
             this.lblSkin.Text = "Skin:";
             // 
@@ -12828,7 +12828,7 @@ namespace Chummer
             this.lblWeight.Location = new System.Drawing.Point(172, 38);
             this.lblWeight.Name = "lblWeight";
             this.lblWeight.Size = new System.Drawing.Size(44, 13);
-            this.lblWeight.TabIndex = 10;
+            this.lblWeight.TabIndex = 13;
             this.lblWeight.Tag = "Label_Weight";
             this.lblWeight.Text = "Weight:";
             // 
@@ -12838,7 +12838,7 @@ namespace Chummer
             this.lblHeight.Location = new System.Drawing.Point(8, 38);
             this.lblHeight.Name = "lblHeight";
             this.lblHeight.Size = new System.Drawing.Size(41, 13);
-            this.lblHeight.TabIndex = 8;
+            this.lblHeight.TabIndex = 11;
             this.lblHeight.Tag = "Label_Height";
             this.lblHeight.Text = "Height:";
             // 
@@ -12848,7 +12848,7 @@ namespace Chummer
             this.lblHair.Location = new System.Drawing.Point(654, 38);
             this.lblHair.Name = "lblHair";
             this.lblHair.Size = new System.Drawing.Size(29, 13);
-            this.lblHair.TabIndex = 6;
+            this.lblHair.TabIndex = 19;
             this.lblHair.Tag = "Label_Hair";
             this.lblHair.Text = "Hair:";
             // 
@@ -12858,7 +12858,7 @@ namespace Chummer
             this.lblEyes.Location = new System.Drawing.Point(493, 38);
             this.lblEyes.Name = "lblEyes";
             this.lblEyes.Size = new System.Drawing.Size(33, 13);
-            this.lblEyes.TabIndex = 4;
+            this.lblEyes.TabIndex = 17;
             this.lblEyes.Tag = "Label_Eyes";
             this.lblEyes.Text = "Eyes:";
             // 
@@ -12868,7 +12868,7 @@ namespace Chummer
             this.lblAge.Location = new System.Drawing.Point(493, 12);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(29, 13);
-            this.lblAge.TabIndex = 2;
+            this.lblAge.TabIndex = 7;
             this.lblAge.Tag = "Label_Age";
             this.lblAge.Text = "Age:";
             // 
@@ -12878,7 +12878,7 @@ namespace Chummer
             this.lblSex.Location = new System.Drawing.Point(654, 12);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(28, 13);
-            this.lblSex.TabIndex = 0;
+            this.lblSex.TabIndex = 9;
             this.lblSex.Tag = "Label_Sex";
             this.lblSex.Text = "Sex:";
             // 
@@ -12887,7 +12887,7 @@ namespace Chummer
             this.txtAlias.Location = new System.Drawing.Point(375, 9);
             this.txtAlias.Name = "txtAlias";
             this.txtAlias.Size = new System.Drawing.Size(100, 20);
-            this.txtAlias.TabIndex = 89;
+            this.txtAlias.TabIndex = 6;
             // 
             // lblAlias
             // 
@@ -12895,7 +12895,7 @@ namespace Chummer
             this.lblAlias.Location = new System.Drawing.Point(340, 12);
             this.lblAlias.Name = "lblAlias";
             this.lblAlias.Size = new System.Drawing.Size(32, 13);
-            this.lblAlias.TabIndex = 88;
+            this.lblAlias.TabIndex = 5;
             this.lblAlias.Tag = "Label_Alias";
             this.lblAlias.Text = "Alias:";
             // 
@@ -12910,7 +12910,7 @@ namespace Chummer
             this.picMugshot.Name = "picMugshot";
             this.picMugshot.Size = new System.Drawing.Size(210, 398);
             this.picMugshot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMugshot.TabIndex = 20;
+            this.picMugshot.TabIndex = 46;
             this.picMugshot.TabStop = false;
             this.picMugshot.SizeChanged += new System.EventHandler(this.picMugshot_SizeChanged);
             // 
